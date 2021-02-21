@@ -3,11 +3,10 @@ package com.example.muza10k;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
-@ComponentScan("com.example.muza10k.services")
 @SpringBootApplication
-
+@EnableGlobalMethodSecurity(securedEnabled = true)
 public class Muza10kApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
